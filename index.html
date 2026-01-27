@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomFart - Surprise Sound Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💨 RandomFart</h1>
+            <p class="tagline">Surprise sounds at random intervals. You've been warned.</p>
+        </header>
+
+        <main>
+            <div class="status-display">
+                <div id="status-indicator" class="status-off"></div>
+                <span id="status-text">Inactive</span>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label>Sound Type:</label>
+                    <div class="sound-options">
+                        <button class="sound-btn active" data-sound="fart">💨 Farts</button>
+                        <button class="sound-btn" data-sound="cough">😷 Coughs</button>
+                        <button class="sound-btn" data-sound="sneeze">🤧 Sneezes</button>
+                        <button class="sound-btn" data-sound="word">🗣️ Random Words</button>
+                        <button class="sound-btn" data-sound="kitchen">👨‍🍳 Hell's Kitchen</button>
+                        <button class="sound-btn" data-sound="all">🎲 All Random</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label for="min-interval">Min Interval: <span id="min-value">30</span>s</label>
+                    <input type="range" id="min-interval" min="5" max="300" value="30">
+                </div>
+
+                <div class="control-group">
+                    <label for="max-interval">Max Interval: <span id="max-value">120</span>s</label>
+                    <input type="range" id="max-interval" min="10" max="600" value="120">
+                </div>
+
+                <div class="control-group">
+                    <label for="volume">Volume: <span id="volume-value">50</span>%</label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                </div>
+
+                <div class="button-row">
+                    <button id="start-btn" class="primary-btn">▶️ Start</button>
+                    <button id="stop-btn" class="secondary-btn" disabled>⏹️ Stop</button>
+                    <button id="test-btn" class="test-btn">🔊 Test Sound</button>
+                </div>
+            </div>
+
+            <div class="countdown-section">
+                <p>Next sound in: <span id="countdown">--:--</span></p>
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="stats">
+                <p>Sounds played: <span id="play-count">0</span></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>⚠️ Use responsibly. Not responsible for workplace incidents.</p>
+        </footer>
+    </div>
+
+    <script src="sounds.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
