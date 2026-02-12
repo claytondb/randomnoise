@@ -1,10 +1,10 @@
-﻿# Random Fart Soundboard
+﻿# Random Noise Soundboard
 
-💨 A fun web-based soundboard with fart sound effects.
+💨 A fun web-based soundboard with sound effects.
 
 ## Features
 
-- Multiple fart sound variations
+- Multiple noise sound variations
 - Browser-based (no installation needed)
 - Keyboard shortcuts for quick access
 - Adjustable volume
