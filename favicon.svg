@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9b7cc4"/>
+      <stop offset="100%" style="stop-color:#6b4c9a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#1a1a2e"/>
+  
+  <!-- Cloud/poof shape representing the... you know -->
+  <ellipse cx="32" cy="34" rx="18" ry="14" fill="url(#cloudGrad)" opacity="0.9"/>
+  <ellipse cx="24" cy="30" rx="10" ry="8" fill="url(#cloudGrad)" opacity="0.8"/>
+  <ellipse cx="42" cy="28" rx="8" ry="7" fill="url(#cloudGrad)" opacity="0.8"/>
+  <ellipse cx="26" cy="40" rx="9" ry="6" fill="url(#cloudGrad)" opacity="0.7"/>
+  <ellipse cx="38" cy="42" rx="7" ry="5" fill="url(#cloudGrad)" opacity="0.7"/>
+  
+  <!-- Small accent circles for "poof" effect -->
+  <circle cx="18" cy="26" r="4" fill="#9b7cc4" opacity="0.6"/>
+  <circle cx="48" cy="24" r="3" fill="#9b7cc4" opacity="0.5"/>
+  <circle cx="50" cy="38" r="3.5" fill="#9b7cc4" opacity="0.5"/>
+  <circle cx="14" cy="36" r="3" fill="#9b7cc4" opacity="0.5"/>
+  
+  <!-- Motion lines -->
+  <path d="M 12 44 Q 8 48, 10 52" stroke="#9b7cc4" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 52 44 Q 56 48, 54 52" stroke="#9b7cc4" stroke-width="2" fill="none" opacity="0.5"/>
+</svg>
